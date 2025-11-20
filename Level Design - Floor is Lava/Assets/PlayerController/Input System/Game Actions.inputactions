@@ -11,7 +11,7 @@
                     "type": "Value",
                     "id": "934b0f1f-df21-44d7-a838-1c25c71adf3e",
                     "expectedControlType": "Vector2",
-                    "processors": "DeltaTimeScale,ScaleVector2",
+                    "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
                 },
@@ -103,7 +103,7 @@
                     "type": "Value",
                     "id": "bbfcba97-50d0-4566-87e8-5ed2f2f6e7b5",
                     "expectedControlType": "Vector2",
-                    "processors": "",
+                    "processors": "DeltaTimeScale,ScaleVector2(x=0.1,y=0.1)",
                     "interactions": "",
                     "initialStateCheck": true
                 },
