@@ -7,6 +7,7 @@ public class PickUp : MonoBehaviour
     //private float maxHeldObjects = 1f;
     private float currentHeldObjects = 0f;
     [SerializeField] GameObject target;
+    [SerializeField] GameObject centered;
 
     void Update()
     {
@@ -40,10 +41,20 @@ public class PickUp : MonoBehaviour
     void PickUpObject()
     {
         this.transform.parent = target.transform;
-        this.transform.localEulerAngles = new Vector3(10, 10, 10); //this is a bit janky..
+        
+        
+        //Transform centered = pickUpCenter.transform;
+
+        
+        //this.transform.localEulerAngles = new Vector3(0, 0, 0); //this is a bit janky..
                      //is just as likely to move around. how do I make it consistent?
         this.GetComponent<Rigidbody>().isKinematic = true;
         currentHeldObjects = 1;
+
+        if (currentHeldObjects == 1)
+        {
+            this.transform.position = target.transform.position;
+        }
     }
 
     void DropObject()
