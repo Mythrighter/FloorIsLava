@@ -46,7 +46,7 @@ public class PickUp : MonoBehaviour
         //Transform centered = pickUpCenter.transform;
 
         
-        //this.transform.localEulerAngles = new Vector3(0, 0, 0); //this is a bit janky..
+        this.transform.localEulerAngles = new Vector3(0, 0, 0); //this is a bit janky..
                      //is just as likely to move around. how do I make it consistent?
         this.GetComponent<Rigidbody>().isKinematic = true;
         currentHeldObjects = 1;
