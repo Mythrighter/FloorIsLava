@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class PickUp : MonoBehaviour
 {
@@ -41,20 +42,18 @@ public class PickUp : MonoBehaviour
     void PickUpObject()
     {
         this.transform.parent = target.transform;
-        
-        
-        //Transform centered = pickUpCenter.transform;
 
-        
+        this.transform.position = target.transform.position;
+             
         this.transform.localEulerAngles = new Vector3(0, 0, 0); //this is a bit janky..
                      //is just as likely to move around. how do I make it consistent?
-        this.GetComponent<Rigidbody>().isKinematic = true;
+        //this.GetComponent<Rigidbody>().isKinematic = true;
         currentHeldObjects = 1;
 
-        if (currentHeldObjects == 1)
+        /*if (currentHeldObjects == 1)
         {
             this.transform.position = target.transform.position;
-        }
+        }*/
     }
 
     void DropObject()
