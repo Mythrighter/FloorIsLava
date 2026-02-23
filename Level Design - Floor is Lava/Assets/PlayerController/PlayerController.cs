@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     [Range(0.01f , 2f)] public float sensitivity = 1;
 
     //Movement
-    public float move_speed = 10f;
+    private float move_speed = 10f;
     public float acceleration = 0.2f;
     public float friction = 0.2f;
     public float gravity = 0.2f;

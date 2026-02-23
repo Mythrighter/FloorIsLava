@@ -8,7 +8,9 @@ public class PickUp : MonoBehaviour
     float throwForce = 300;
     [SerializeField]
     float maxDistance = 3f;
+
     float distance;
+
 
     TempParent tempParent;
     Rigidbody rb;
@@ -44,10 +46,10 @@ public class PickUp : MonoBehaviour
                 isHolding = true;
                 rb.useGravity = false;
                 rb.detectCollisions = true;
-                
-                
-
+                                
                 this.transform.SetParent(tempParent.transform);
+
+                ScoreManager.sManager.IncreaseScore(10);
             }
 
         }
