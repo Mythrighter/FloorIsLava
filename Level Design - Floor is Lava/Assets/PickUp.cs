@@ -1,3 +1,4 @@
+using Unity.Cinemachine;
 using UnityEngine;
 
 public class PickUp : MonoBehaviour
@@ -49,7 +50,21 @@ public class PickUp : MonoBehaviour
                                 
                 this.transform.SetParent(tempParent.transform);
 
-                ScoreManager.sManager.IncreaseScore(10);
+                if (tag == "CouchCushion")
+                {
+                    ScoreManager.sManager.IncreaseScoreCouchCushion(10);
+                }
+                
+                if (tag == "BigCushion")
+                {
+                    ScoreManager.sManager.IncreaseScoreBigCushion(20);
+                }
+
+                if (tag == "Bowl")
+                {
+                    ScoreManager.sManager.IncreaseScoreBowl(5);
+                }
+                
             }
 
         }

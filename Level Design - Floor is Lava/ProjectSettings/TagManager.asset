@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - canPickUp
+  - CouchCushion
+  - BigCushion
+  - Bowl
   layers:
   - Default
   - TransparentFX
