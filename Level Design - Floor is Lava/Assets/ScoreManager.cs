@@ -33,6 +33,11 @@ public class ScoreManager : MonoBehaviour
         playerScore += Increase;
     }
 
+    public void IncreaseCushionWalk(int Increase)
+    {
+        playerScore += Increase;
+    }
+
     public void Update()
     {
         scoreText.text = playerScore.ToString();
