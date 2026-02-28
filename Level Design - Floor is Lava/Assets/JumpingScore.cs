@@ -4,10 +4,11 @@ public class JumpingScore : MonoBehaviour
 {
     void OnTriggerEnter(Collider other)
     {
-        if(tag == "CouchCushion")
+        if(other.gameObject.CompareTag("CouchCushion"))
         {
             ScoreManager.sManager.IncreaseCushionWalk(5);
         }
+
     }
 
     // Update is called once per frame
