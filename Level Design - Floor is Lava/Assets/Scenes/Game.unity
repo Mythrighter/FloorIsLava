@@ -324,7 +324,7 @@ GameObject:
   - component: {fileID: 53422776}
   m_Layer: 6
   m_Name: Mesh
-  m_TagString: Untagged
+  m_TagString: Table
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7406,6 +7406,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 6496c0eac9f488b41920f78bfed9b836, type: 3}
+      propertyPath: m_TagString
+      value: Table
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -7528,7 +7532,7 @@ GameObject:
   - component: {fileID: 1539745157}
   m_Layer: 6
   m_Name: Mesh
-  m_TagString: Untagged
+  m_TagString: Table
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8634,6 +8638,10 @@ PrefabInstance:
     - target: {fileID: 8164078558771037576, guid: 96d1d92b9aea0df43b2f2ef45dc4e408, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 96d1d92b9aea0df43b2f2ef45dc4e408, type: 3}
+      propertyPath: m_TagString
+      value: Table
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

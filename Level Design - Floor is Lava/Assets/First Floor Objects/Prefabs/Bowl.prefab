@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1ab0ff995ce2564ea8b3dbf8e7b4229, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  throwForce: 500
+  throwForce: 600
   maxDistance: 3
 --- !u!54 &5416383228917766056
 Rigidbody:
