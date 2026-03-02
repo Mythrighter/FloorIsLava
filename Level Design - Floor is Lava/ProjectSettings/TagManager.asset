@@ -8,6 +8,8 @@ TagManager:
   - CouchCushion
   - BigCushion
   - Bowl
+  - Table
+  - Stove
   layers:
   - Default
   - TransparentFX

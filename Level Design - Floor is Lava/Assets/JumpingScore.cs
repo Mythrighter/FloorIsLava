@@ -9,6 +9,15 @@ public class JumpingScore : MonoBehaviour
             ScoreManager.sManager.IncreaseCushionWalk(5);
         }
 
+        if (other.gameObject.CompareTag("Table"))
+        {
+            ScoreManager.sManager.IncreaseTableWalk(5);
+        }
+
+        if(other.gameObject.CompareTag("Stove"))
+        {
+            ScoreManager.sManager.IncreaseStoveWalk(25);
+        }
     }
 
     // Update is called once per frame

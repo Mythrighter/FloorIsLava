@@ -38,6 +38,16 @@ public class ScoreManager : MonoBehaviour
         playerScore += Increase;
     }
 
+    public void IncreaseTableWalk(int Increase)
+    {
+        playerScore += Increase;
+    }
+
+    public void IncreaseStoveWalk(int Increase)
+    {
+        playerScore += Increase;
+    }
+
     public void Update()
     {
         scoreText.text = playerScore.ToString();
