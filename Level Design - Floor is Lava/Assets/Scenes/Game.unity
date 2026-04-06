@@ -8342,7 +8342,7 @@ GameObject:
   m_Component:
   - component: {fileID: 741500409}
   - component: {fileID: 741500410}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11054,8 +11054,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d38d6c575f8fafa4d8d57a4889ad7535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctPosition: {x: -10.02, y: -0.02770054, z: 23.14}
   isOutOfPlace: 0
+  correctPosition: {x: -10.02, y: -0.02770054, z: 23.14}
 --- !u!4 &1225735773 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2183762644507947980, guid: 338e6102a58aa9546854cc2754975a42, type: 3}
@@ -11181,7 +11181,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8abe74e74ec7aa847a880af0cc7d272d, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8abe74e74ec7aa847a880af0cc7d272d, type: 3}
       propertyPath: m_TagString
@@ -11193,7 +11193,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8164078558771037576, guid: 8abe74e74ec7aa847a880af0cc7d272d, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8164078558771037576, guid: 8abe74e74ec7aa847a880af0cc7d272d, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -11205,7 +11205,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1151388028547126963, guid: 8abe74e74ec7aa847a880af0cc7d272d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 741500409}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8abe74e74ec7aa847a880af0cc7d272d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1352754269}
   m_SourcePrefab: {fileID: 100100000, guid: 8abe74e74ec7aa847a880af0cc7d272d, type: 3}
 --- !u!1001 &1250974689
 PrefabInstance:
@@ -11707,6 +11710,27 @@ PrefabInstance:
       addedObject: {fileID: 2028549854}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec80985f3cb470848b6fd15973e0066f, type: 3}
+--- !u!1 &1352754268 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8abe74e74ec7aa847a880af0cc7d272d, type: 3}
+  m_PrefabInstance: {fileID: 1241877024}
+  m_PrefabAsset: {fileID: 0}
+--- !u!208 &1352754269
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352754268}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 3.755, y: 0.865, z: 1.38}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 2.25, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1001 &1366817956
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12415,8 +12439,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d38d6c575f8fafa4d8d57a4889ad7535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctPosition: {x: 4.427252, y: -0.02521813, z: 25.33}
   isOutOfPlace: 1
+  correctPosition: {x: 4.427252, y: -0.02521813, z: 25.33}
 --- !u!1001 &1461717948
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12830,6 +12854,7 @@ MonoBehaviour:
   visionCone: {fileID: 1516906296}
   interactionDistance: 1.5
   carryZone: {fileID: 297699617}
+  pickupDropDelay: 1
 --- !u!114 &1516906295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12864,7 +12889,7 @@ MonoBehaviour:
     m_Bits: 128
   obstacleMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
   drawGizmos: 1
 --- !u!1001 &1519906548
 PrefabInstance:
@@ -14666,7 +14691,7 @@ MonoBehaviour:
   m_Center: {x: 0, y: 2, z: 0}
   m_LayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 247
   m_UseGeometry: 0
   m_DefaultArea: 0
   m_GenerateLinks: 0
@@ -14677,7 +14702,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 420f4b0061e51654195674d75a60fa90, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 0cc40a3df74fa1c42a2208f834ec41b7, type: 2}
   m_BuildHeightMesh: 0
 --- !u!1 &1797703877 stripped
 GameObject:
