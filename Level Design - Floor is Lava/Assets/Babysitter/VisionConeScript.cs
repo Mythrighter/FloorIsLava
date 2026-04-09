@@ -14,11 +14,14 @@ public class VisionCone : MonoBehaviour
     public Item FindVisibleTarget()
     {
         Collider[] targets = Physics.OverlapSphere(transform.position, viewRadius, targetMask);
+
+        Debug.Log("Items in range: " + targets.Length);
+
         Item bestTarget = null;
 
         foreach (Collider col in targets)
         {
-            Item item = col.GetComponent<Item>();
+            Item item = col.GetComponentInParent<Item>();
             if (item == null || !item.NeedsAttention()) continue;
 
             Vector3 dirToTarget = (item.transform.position - transform.position).normalized;

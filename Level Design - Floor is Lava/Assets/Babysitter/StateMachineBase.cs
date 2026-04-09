@@ -54,9 +54,17 @@ public class StateMachineBase : MonoBehaviour
                     if (dist <= interactionDistance)
                     {
                         agent.ResetPath();
-                        currentState = AgentState.Interacting;
+                        currentState = AgentState.CleaningUp;
                     }
                     break;
+
+                case AgentState.CleaningUp:
+                    if(currentTarget != null)
+                    {
+                        currentState = AgentState.CleaningUp;
+                    }
+                    break;
+
 
                 case AgentState.Interacting:
                     if (currentTarget != null)

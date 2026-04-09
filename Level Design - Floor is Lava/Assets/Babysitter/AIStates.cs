@@ -5,6 +5,7 @@ using UnityEngine;
         Idle,
         Searching,
         MovingToTarget,
+        CleaningUp,
         Interacting
     }
 

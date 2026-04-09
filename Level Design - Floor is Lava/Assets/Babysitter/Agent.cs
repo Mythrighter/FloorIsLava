@@ -24,7 +24,7 @@ public class Agent : MonoBehaviour
     private bool carryingItem = false;
     private bool isBusy = false; // Prevent actions while waiting
 
-    private enum AgentState { Patrolling, MovingToTarget }
+    private enum AgentState { Patrolling, MovingToTarget, CleaningUp }
     private AgentState currentState = AgentState.Patrolling;
 
     void Start()
@@ -127,6 +127,11 @@ public class Agent : MonoBehaviour
 
         carryingItem = true;
         currentTarget.StartBeingCarried(carryZone);
+
+        if (currentTarget != null)
+        {
+            currentState = AgentState.CleaningUp;
+        }
 
         navAgent.isStopped = false;
         isBusy = false;

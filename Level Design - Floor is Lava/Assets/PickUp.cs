@@ -50,6 +50,9 @@ public class PickUp : MonoBehaviour
                                 
                 this.transform.SetParent(tempParent.transform);
 
+                Item item = GetComponent<Item>();
+                if (item != null) item.isHeldByPlayer = true;
+
                 if (tag == "CouchCushion")
                 {
                     ScoreManager.sManager.IncreaseScoreCouchCushion(10);
@@ -112,6 +115,9 @@ public class PickUp : MonoBehaviour
             this.transform.position = objectPos;
             this.transform.SetParent(null);
             rb.useGravity = true;
+
+            Item item = GetComponent<Item>();
+            if (item != null) item.isHeldByPlayer = false;
         }
     }
 }
