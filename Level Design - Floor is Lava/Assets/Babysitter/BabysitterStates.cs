@@ -183,6 +183,7 @@ public class Babysitter : MonoBehaviour
         currentTarget.transform.position = currentTarget.correctPosition;
         currentTarget.transform.rotation = currentTarget.correctRotation;
         currentTarget.isOutOfPlace = false;
+        currentTarget.SetTargeted(false);
 
         currentTarget = null;
         ReturnToPatrol();

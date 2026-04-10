@@ -119,11 +119,52 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &6417537 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6756791003646810672, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
+  m_PrefabInstance: {fileID: 956087728}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &13659579 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 81c7f3b3b6441554c9357b51372cb305, type: 3}
   m_PrefabInstance: {fileID: 2114976377}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &14627878 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6756791003646810672, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
+  m_PrefabInstance: {fileID: 1366817956}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &14799435
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 14799436}
+  m_Layer: 7
+  m_Name: Cushion3DropPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &14799436
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14799435}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -6.91, y: -1.0152181, z: 23.53}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 978440526}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &22300723
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -271,6 +312,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 978440526}
     m_Modifications:
+    - target: {fileID: 326782557930756492, guid: 0fe4c709dd398d84ea33a55c1b05f0cf, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1397052184067074668, guid: 0fe4c709dd398d84ea33a55c1b05f0cf, type: 3}
       propertyPath: throwForce
       value: 300
@@ -317,12 +362,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8720443190632702293, guid: 0fe4c709dd398d84ea33a55c1b05f0cf, type: 3}
       propertyPath: m_Name
-      value: Cushioin 1
+      value: Cushion 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720443190632702293, guid: 0fe4c709dd398d84ea33a55c1b05f0cf, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9092227671256778852, guid: 0fe4c709dd398d84ea33a55c1b05f0cf, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8720443190632702293, guid: 0fe4c709dd398d84ea33a55c1b05f0cf, type: 3}
+      insertIndex: 3
+      addedObject: {fileID: 679087816}
   m_SourcePrefab: {fileID: 100100000, guid: 0fe4c709dd398d84ea33a55c1b05f0cf, type: 3}
 --- !u!1 &57030239
 GameObject:
@@ -512,6 +568,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1920735266}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &166861946 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8720443190632702293, guid: 0fe4c709dd398d84ea33a55c1b05f0cf, type: 3}
+  m_PrefabInstance: {fileID: 54686773}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &173373304 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1151388028547126963, guid: 2fa15a801d2f4604b9988cc80a493b44, type: 3}
@@ -761,6 +822,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 978440526}
     m_Modifications:
+    - target: {fileID: 326782557930756492, guid: 0fe4c709dd398d84ea33a55c1b05f0cf, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1397052184067074668, guid: 0fe4c709dd398d84ea33a55c1b05f0cf, type: 3}
       propertyPath: throwForce
       value: 300
@@ -809,10 +874,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cushion 4
       objectReference: {fileID: 0}
+    - target: {fileID: 8720443190632702293, guid: 0fe4c709dd398d84ea33a55c1b05f0cf, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9092227671256778852, guid: 0fe4c709dd398d84ea33a55c1b05f0cf, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8720443190632702293, guid: 0fe4c709dd398d84ea33a55c1b05f0cf, type: 3}
+      insertIndex: 3
+      addedObject: {fileID: 2029173281}
   m_SourcePrefab: {fileID: 100100000, guid: 0fe4c709dd398d84ea33a55c1b05f0cf, type: 3}
 --- !u!1 &211511481
 GameObject:
@@ -845,11 +921,73 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1920735266}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &215675472
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 215675473}
+  m_Layer: 0
+  m_Name: Kitchen4DropPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &215675473
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215675472}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -29.15, y: 0, z: 4.93}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1453839169}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &218382920 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: aa6300f60e5d23c4f8d51d8ecb9977cc, type: 3}
   m_PrefabInstance: {fileID: 663734142}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &248596093
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 248596094}
+  m_Layer: 0
+  m_Name: Dining7DropPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &248596094
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248596093}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -24.34, y: 0, z: 18.85}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1453839169}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &271565855 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9116520119084223307, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
@@ -891,6 +1029,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1516906293}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &302744157 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6756791003646810672, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
+  m_PrefabInstance: {fileID: 1074032199}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &303444853
 GameObject:
   m_ObjectHideFlags: 0
@@ -923,6 +1066,11 @@ Transform:
   - {fileID: 31101419}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &306469255 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6756791003646810672, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
+  m_PrefabInstance: {fileID: 927903855}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &315887938
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1280,6 +1428,28 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 89aaf47502be6374b989f05c19577c88, type: 3}
   m_PrefabInstance: {fileID: 1063308547}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &378545892 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6756791003646810672, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
+  m_PrefabInstance: {fileID: 903461676}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &378545897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378545892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d38d6c575f8fafa4d8d57a4889ad7535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOutOfPlace: 0
+  isHeldByPlayer: 0
+  correctPosition: {x: -23.87, y: 0, z: 27.67}
+  correctRotation: {x: 0, y: 0, z: 0, w: 0}
+  dropPoint: {fileID: 873823329}
 --- !u!1001 &381368629
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1400,9 +1570,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1453839169}
     m_Modifications:
+    - target: {fileID: 595172189224085800, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8489199620227322353, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
       propertyPath: m_Name
       value: Kitchen Chair 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489199620227322353, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9116520119084223307, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1447,7 +1625,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8489199620227322353, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
+      insertIndex: 4
+      addedObject: {fileID: 1645780315}
   m_SourcePrefab: {fileID: 100100000, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
 --- !u!4 &387336620 stripped
 Transform:
@@ -1467,6 +1648,22 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 824811015356459209, guid: 0fe4c709dd398d84ea33a55c1b05f0cf, type: 3}
+      propertyPath: m_Size.x
+      value: 3.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 824811015356459209, guid: 0fe4c709dd398d84ea33a55c1b05f0cf, type: 3}
+      propertyPath: m_Size.y
+      value: 0.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 824811015356459209, guid: 0fe4c709dd398d84ea33a55c1b05f0cf, type: 3}
+      propertyPath: m_Size.z
+      value: 2.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 824811015356459209, guid: 0fe4c709dd398d84ea33a55c1b05f0cf, type: 3}
+      propertyPath: m_Center.y
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 824811015356459209, guid: 0fe4c709dd398d84ea33a55c1b05f0cf, type: 3}
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
@@ -1476,7 +1673,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8236780586632657903, guid: 0fe4c709dd398d84ea33a55c1b05f0cf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.02521813
+      value: -0.03
       objectReference: {fileID: 0}
     - target: {fileID: 8236780586632657903, guid: 0fe4c709dd398d84ea33a55c1b05f0cf, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1874,12 +2071,43 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 1.515, y: 0.41, z: 2.01}
+  m_Extents: {x: 1.515, y: 0.365, z: 2.23}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 1
-  m_Center: {x: 1.34, y: 0.61, z: 1.63}
+  m_Center: {x: 1.34, y: 0.77, z: 1.63}
   m_TimeToStationary: 0.5
+--- !u!1 &447558406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 447558407}
+  m_Layer: 7
+  m_Name: CushionBlueDropPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &447558407
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447558406}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -4.45, y: -1.0152181, z: 22.02}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 978440526}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &453150069
 GameObject:
   m_ObjectHideFlags: 0
@@ -2198,22 +2426,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   throwForce: 300
   maxDistance: 3
---- !u!208 &476381150
-NavMeshObstacle:
+--- !u!114 &476381150
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 476381146}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 1.825, y: 0.39, z: 1.445}
-  m_MoveThreshold: 0.1
-  m_Carve: 1
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0.33, z: 0}
-  m_TimeToStationary: 0.1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d38d6c575f8fafa4d8d57a4889ad7535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOutOfPlace: 0
+  isHeldByPlayer: 0
+  correctPosition: {x: -5.1, y: -0.1783006, z: 18.9}
+  correctRotation: {x: 0, y: 0, z: 0, w: 0}
+  dropPoint: {fileID: 447558407}
 --- !u!4 &484122277 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a2e5df06d1b98794eb374b91b3cd673a, type: 3}
@@ -2229,7 +2458,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1514784123642292598, guid: 338e6102a58aa9546854cc2754975a42, type: 3}
       propertyPath: m_Name
-      value: Stool
+      value: Stool1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1514784123642292598, guid: 338e6102a58aa9546854cc2754975a42, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2183762644507947980, guid: 338e6102a58aa9546854cc2754975a42, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2275,10 +2508,21 @@ PrefabInstance:
       propertyPath: y
       value: -100
       objectReference: {fileID: 0}
+    - target: {fileID: 6095200860958489609, guid: 338e6102a58aa9546854cc2754975a42, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7532362472837796271, guid: 338e6102a58aa9546854cc2754975a42, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1514784123642292598, guid: 338e6102a58aa9546854cc2754975a42, type: 3}
+      insertIndex: 3
+      addedObject: {fileID: 649260081}
   m_SourcePrefab: {fileID: 100100000, guid: 338e6102a58aa9546854cc2754975a42, type: 3}
 --- !u!1001 &497834783
 PrefabInstance:
@@ -2747,6 +2991,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 68daa8d17c7ae024c84f2ef381ff9e45, type: 3}
   m_PrefabInstance: {fileID: 394518934}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &590275020
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 590275021}
+  m_Layer: 0
+  m_Name: Stool2DropPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &590275021
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590275020}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -35.38, y: 0, z: 10.99}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1453839169}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &590534104 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9116520119084223307, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
@@ -3007,6 +3282,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1920735266}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &649260077 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1514784123642292598, guid: 338e6102a58aa9546854cc2754975a42, type: 3}
+  m_PrefabInstance: {fileID: 494539348}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &649260081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649260077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d38d6c575f8fafa4d8d57a4889ad7535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOutOfPlace: 0
+  isHeldByPlayer: 0
+  correctPosition: {x: -36.36292, y: 0, z: 11.69011}
+  correctRotation: {x: 0, y: 0, z: 0, w: 0}
+  dropPoint: {fileID: 1748951300}
 --- !u!4 &650969980 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9aeb4b1a2f3a98040b239bf13533b7d9, type: 3}
@@ -3279,6 +3576,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8236780586632657903, guid: 0fe4c709dd398d84ea33a55c1b05f0cf, type: 3}
   m_PrefabInstance: {fileID: 54686773}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &679087816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166861946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d38d6c575f8fafa4d8d57a4889ad7535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOutOfPlace: 0
+  isHeldByPlayer: 0
+  correctPosition: {x: 4.407118, y: -0.02562678, z: 29.33585}
+  correctRotation: {x: 0, y: 0, z: 0, w: 0}
+  dropPoint: {fileID: 1204800842}
 --- !u!4 &680511289 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a11d2b527ec5f24488d7df105f6e92ae, type: 3}
@@ -8419,6 +8733,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7297961786157830212, guid: 6a97bb60b681d2b489cfb97a29eddcaa, type: 3}
   m_PrefabInstance: {fileID: 661501480}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &737413315
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 737413316}
+  m_Layer: 0
+  m_Name: Dining3DropPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &737413316
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737413315}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -19.61, y: 0, z: 22.69}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1453839169}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &741500408
 GameObject:
   m_ObjectHideFlags: 0
@@ -8715,6 +9060,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1453839169}
     m_Modifications:
+    - target: {fileID: 2326454995891725033, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6237240511646400650, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -21.35
@@ -8757,14 +9106,52 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6756791003646810672, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
       propertyPath: m_Name
-      value: Dining Chair (2)
+      value: Dining Chair 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6756791003646810672, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7210936281745831845, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6756791003646810672, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
+      insertIndex: 4
+      addedObject: {fileID: 1351057689}
   m_SourcePrefab: {fileID: 100100000, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
+--- !u!1 &798118370
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 798118371}
+  m_Layer: 0
+  m_Name: Dining4DropPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &798118371
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798118370}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -15.25, y: 0, z: 25.36}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1453839169}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &804022862
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9069,6 +9456,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a11d2b527ec5f24488d7df105f6e92ae, type: 3}
   m_PrefabInstance: {fileID: 628553456}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &873823328
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 873823329}
+  m_Layer: 0
+  m_Name: Dining5DropPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &873823329
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873823328}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -26.71, y: 0, z: 25.82}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1453839169}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &875559318
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9233,6 +9651,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1453839169}
     m_Modifications:
+    - target: {fileID: 2326454995891725033, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6237240511646400650, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -23.87
@@ -9275,13 +9697,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6756791003646810672, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
       propertyPath: m_Name
-      value: Dining Chair (4)
+      value: Dining Chair 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6756791003646810672, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7210936281745831845, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6756791003646810672, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
+      insertIndex: 4
+      addedObject: {fileID: 378545897}
   m_SourcePrefab: {fileID: 100100000, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
 --- !u!1001 &905227944
 PrefabInstance:
@@ -9351,6 +9780,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cushion Blue
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2bdbb6d7c1c531342840780bbf1b44c5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 2bdbb6d7c1c531342840780bbf1b44c5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9393,9 +9830,9 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.965, y: 0.54, z: 5.175}
   m_MoveThreshold: 0.1
-  m_Carve: 0
+  m_Carve: 1
   m_CarveOnlyStationary: 1
-  m_Center: {x: 1.52, y: 0.57, z: -4.06}
+  m_Center: {x: 1.52, y: 1.05, z: -4.06}
   m_TimeToStationary: 0.5
 --- !u!1001 &927903855
 PrefabInstance:
@@ -9405,9 +9842,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1453839169}
     m_Modifications:
+    - target: {fileID: 2326454995891725033, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6237240511646400650, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.45
+      value: 3.29
       objectReference: {fileID: 0}
     - target: {fileID: 6237240511646400650, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9415,7 +9856,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6237240511646400650, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.6
+      value: -1.12
       objectReference: {fileID: 0}
     - target: {fileID: 6237240511646400650, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9447,15 +9888,53 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6756791003646810672, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
       propertyPath: m_Name
-      value: Dining Chair (7)
+      value: Dining Chair 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6756791003646810672, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2112526987345881738, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
     m_RemovedGameObjects:
     - {fileID: 7210936281745831845, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6756791003646810672, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
+      insertIndex: 4
+      addedObject: {fileID: 2024778321}
   m_SourcePrefab: {fileID: 100100000, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
+--- !u!1 &929402679
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 929402680}
+  m_Layer: 0
+  m_Name: Dining8DropPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &929402680
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929402679}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.12, y: 0, z: -3.21}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1453839169}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &934358680 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a2e5df06d1b98794eb374b91b3cd673a, type: 3}
@@ -9517,6 +9996,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1453839169}
     m_Modifications:
+    - target: {fileID: 2326454995891725033, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6237240511646400650, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -21.14
@@ -9559,13 +10042,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6756791003646810672, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
       propertyPath: m_Name
-      value: Dining Chair
+      value: Dining Chair 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6756791003646810672, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7210936281745831845, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6756791003646810672, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
+      insertIndex: 4
+      addedObject: {fileID: 1954009463}
   m_SourcePrefab: {fileID: 100100000, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
 --- !u!1 &966132962
 GameObject:
@@ -9644,9 +10134,13 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1204800842}
+  - {fileID: 453150070}
+  - {fileID: 14799436}
+  - {fileID: 1375546776}
+  - {fileID: 447558407}
   - {fileID: 1531537926}
   - {fileID: 1225338794}
-  - {fileID: 453150070}
   - {fileID: 1460875885}
   - {fileID: 679087812}
   - {fileID: 48263120}
@@ -9706,6 +10200,68 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2432090755550338912, guid: a8b02a90048ae3b49a9b4b73b99d6ab8, type: 3}
+--- !u!1 &999956001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 999956002}
+  m_Layer: 0
+  m_Name: Dining2DropPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &999956002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999956001}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -19.65, y: 0, z: 34.42}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1453839169}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1003840881
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1003840882}
+  m_Layer: 0
+  m_Name: Dining6DropPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1003840882
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003840881}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -12.46, y: 0, z: 32.38}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1453839169}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1004877847
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10190,6 +10746,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1453839169}
     m_Modifications:
+    - target: {fileID: 2326454995891725033, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6237240511646400650, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -17.23
@@ -10232,14 +10792,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6756791003646810672, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
       propertyPath: m_Name
-      value: Dining Chair (1)
+      value: Dining Chair 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6756791003646810672, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7210936281745831845, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6756791003646810672, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
+      insertIndex: 4
+      addedObject: {fileID: 1397189597}
   m_SourcePrefab: {fileID: 100100000, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
+--- !u!1 &1099397777 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8489199620227322353, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
+  m_PrefabInstance: {fileID: 9066541048746749185}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1099397782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099397777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d38d6c575f8fafa4d8d57a4889ad7535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOutOfPlace: 0
+  isHeldByPlayer: 0
+  correctPosition: {x: -31.21, y: 0, z: 2.79}
+  correctRotation: {x: 0, y: 0, z: 0, w: 0}
+  dropPoint: {fileID: 2017314026}
 --- !u!4 &1106078444 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1151388028547126963, guid: 3bd15ff998bca924fa3ba444fb00f07e, type: 3}
@@ -11142,6 +11731,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1151388028547126963, guid: a2e5df06d1b98794eb374b91b3cd673a, type: 3}
   m_PrefabInstance: {fileID: 353048120}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1204800841
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1204800842}
+  m_Layer: 7
+  m_Name: Cushion1DropPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1204800842
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204800841}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 1.4272518, y: -1.0152181, z: 29.31}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 978440526}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1209925673 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 858e9b584997e504eb720d9b9c38c14b, type: 3}
@@ -11195,7 +11815,7 @@ MonoBehaviour:
   isHeldByPlayer: 0
   correctPosition: {x: -10.02, y: -0.02770054, z: 23.14}
   correctRotation: {x: 0, y: 0, z: 0, w: 0}
-  dropPoint: {fileID: 0}
+  dropPoint: {fileID: 14799436}
 --- !u!4 &1225735773 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2183762644507947980, guid: 338e6102a58aa9546854cc2754975a42, type: 3}
@@ -11599,6 +12219,37 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1883178881}
   m_SourcePrefab: {fileID: 100100000, guid: 4ffdaa913a7b4e449babf436a04b797c, type: 3}
+--- !u!1 &1289807717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1289807718}
+  m_Layer: 0
+  m_Name: Kitchen3DropPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1289807718
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289807717}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -36.93, y: 0, z: 3.41}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1453839169}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1300683753
 GameObject:
   m_ObjectHideFlags: 0
@@ -11856,6 +12507,28 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1591047686}
   m_SourcePrefab: {fileID: 100100000, guid: ec80985f3cb470848b6fd15973e0066f, type: 3}
+--- !u!1 &1351057684 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6756791003646810672, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
+  m_PrefabInstance: {fileID: 779630064}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1351057689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351057684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d38d6c575f8fafa4d8d57a4889ad7535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOutOfPlace: 0
+  isHeldByPlayer: 0
+  correctPosition: {x: -21.35, y: 0, z: 26.01}
+  correctRotation: {x: 0, y: 0, z: 0, w: 0}
+  dropPoint: {fileID: 737413316}
 --- !u!1 &1352754268 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8abe74e74ec7aa847a880af0cc7d272d, type: 3}
@@ -11890,6 +12563,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1453839169}
     m_Modifications:
+    - target: {fileID: 2326454995891725033, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6237240511646400650, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -14.82
@@ -11932,13 +12609,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6756791003646810672, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
       propertyPath: m_Name
-      value: Dining Chair (5)
+      value: Dining Chair 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6756791003646810672, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7210936281745831845, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6756791003646810672, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
+      insertIndex: 4
+      addedObject: {fileID: 1958013845}
   m_SourcePrefab: {fileID: 100100000, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
 --- !u!1001 &1368352585
 PrefabInstance:
@@ -11948,9 +12632,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1453839169}
     m_Modifications:
+    - target: {fileID: 595172189224085800, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8489199620227322353, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
       propertyPath: m_Name
       value: Kitchen Chair 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489199620227322353, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9116520119084223307, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11995,17 +12687,56 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8489199620227322353, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
+      insertIndex: 4
+      addedObject: {fileID: 2117541825}
   m_SourcePrefab: {fileID: 100100000, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
 --- !u!4 &1369413719 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d2191e60479c73d428be0fcd2966aaa2, type: 3}
   m_PrefabInstance: {fileID: 2021084770}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1375546775
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1375546776}
+  m_Layer: 7
+  m_Name: Cushion4DropPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1375546776
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375546775}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -8.84, y: -1.0152181, z: 28.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 978440526}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1381186768 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1151388028547126963, guid: b86f13b363813a44c95759c88e0edf88, type: 3}
   m_PrefabInstance: {fileID: 1035665927}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1387200143 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8489199620227322353, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
+  m_PrefabInstance: {fileID: 1799743503}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1391847257
 PrefabInstance:
@@ -12017,11 +12748,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1514784123642292598, guid: 338e6102a58aa9546854cc2754975a42, type: 3}
       propertyPath: m_Name
-      value: Stool (1)
+      value: Stool2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1514784123642292598, guid: 338e6102a58aa9546854cc2754975a42, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2183762644507947980, guid: 338e6102a58aa9546854cc2754975a42, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -34.448547
+      value: -34.14
       objectReference: {fileID: 0}
     - target: {fileID: 2183762644507947980, guid: 338e6102a58aa9546854cc2754975a42, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12029,7 +12764,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2183762644507947980, guid: 338e6102a58aa9546854cc2754975a42, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 12.695473
+      value: 12.96
       objectReference: {fileID: 0}
     - target: {fileID: 2183762644507947980, guid: 338e6102a58aa9546854cc2754975a42, type: 3}
       propertyPath: m_LocalRotation.w
@@ -12063,16 +12798,44 @@ PrefabInstance:
       propertyPath: y
       value: -100
       objectReference: {fileID: 0}
+    - target: {fileID: 6095200860958489609, guid: 338e6102a58aa9546854cc2754975a42, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7532362472837796271, guid: 338e6102a58aa9546854cc2754975a42, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1514784123642292598, guid: 338e6102a58aa9546854cc2754975a42, type: 3}
+      insertIndex: 3
+      addedObject: {fileID: 1559222828}
   m_SourcePrefab: {fileID: 100100000, guid: 338e6102a58aa9546854cc2754975a42, type: 3}
 --- !u!4 &1397189592 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6237240511646400650, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
   m_PrefabInstance: {fileID: 1074032199}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1397189597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302744157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d38d6c575f8fafa4d8d57a4889ad7535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOutOfPlace: 0
+  isHeldByPlayer: 0
+  correctPosition: {x: -17.23, y: 0, z: 31.68}
+  correctRotation: {x: 0, y: 0, z: 0, w: 0}
+  dropPoint: {fileID: 999956002}
 --- !u!4 &1398758471 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1151388028547126963, guid: 8abe74e74ec7aa847a880af0cc7d272d, type: 3}
@@ -12571,6 +13334,20 @@ Transform:
   - {fileID: 1958013840}
   - {fileID: 1131186896}
   - {fileID: 2024778316}
+  - {fileID: 1748951300}
+  - {fileID: 590275021}
+  - {fileID: 2017314026}
+  - {fileID: 1680196537}
+  - {fileID: 1289807718}
+  - {fileID: 215675473}
+  - {fileID: 1853775707}
+  - {fileID: 999956002}
+  - {fileID: 737413316}
+  - {fileID: 798118371}
+  - {fileID: 873823329}
+  - {fileID: 1003840882}
+  - {fileID: 248596094}
+  - {fileID: 929402680}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1460875885 stripped
@@ -12994,14 +13771,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78e13ffd036c9964680e3cabd88e7cd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  viewRadius: 10
+  viewRadius: 8
   viewAngle: 90
+  viewHeight: 1
   targetMask:
     serializedVersion: 2
     m_Bits: 128
   obstacleMask:
     serializedVersion: 2
     m_Bits: 4294967295
+  awarenessRadius: 4
   drawGizmos: 1
 --- !u!114 &1516906297
 MonoBehaviour:
@@ -13493,12 +14272,34 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 3.895, y: 0.5, z: 5.45}
+  m_Extents: {x: 2.615, y: 0.5, z: 5.45}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 1
-  m_Center: {x: 2.52, y: 3.03, z: -2.57}
+  m_Center: {x: 2.77, y: 3.03, z: -2.57}
   m_TimeToStationary: 0.5
+--- !u!1 &1559222824 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1514784123642292598, guid: 338e6102a58aa9546854cc2754975a42, type: 3}
+  m_PrefabInstance: {fileID: 1391847257}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1559222828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559222824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d38d6c575f8fafa4d8d57a4889ad7535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOutOfPlace: 0
+  isHeldByPlayer: 0
+  correctPosition: {x: -34.14, y: 0, z: 12.96}
+  correctRotation: {x: 0, y: 0, z: 0, w: 0}
+  dropPoint: {fileID: 590275021}
 --- !u!1 &1559525508 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 252500cf1755a0b42972fc13297f5597, type: 3}
@@ -13628,7 +14429,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 2.435, y: 0.645, z: 1.945}
   m_MoveThreshold: 0.1
-  m_Carve: 0
+  m_Carve: 1
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.83, y: 0.66, z: -4.44}
   m_TimeToStationary: 0.5
@@ -14254,6 +15055,28 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2286315e6e02bdb4e89a28a10a224449, type: 3}
+--- !u!1 &1637900135 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6756791003646810672, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
+  m_PrefabInstance: {fileID: 2010560560}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1637900140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637900135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d38d6c575f8fafa4d8d57a4889ad7535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOutOfPlace: 0
+  isHeldByPlayer: 0
+  correctPosition: {x: -17.07, y: 0, z: 28.18}
+  correctRotation: {x: 0, y: 0, z: 0, w: 0}
+  dropPoint: {fileID: 798118371}
 --- !u!1001 &1642926153
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14363,6 +15186,28 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -4.6, y: 1.68, z: -0}
   m_TimeToStationary: 0.5
+--- !u!1 &1645780310 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8489199620227322353, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
+  m_PrefabInstance: {fileID: 385291537}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1645780315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645780310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d38d6c575f8fafa4d8d57a4889ad7535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOutOfPlace: 0
+  isHeldByPlayer: 0
+  correctPosition: {x: -33.57, y: 0, z: 5.03}
+  correctRotation: {x: 0, y: 0, z: 0, w: 0}
+  dropPoint: {fileID: 1680196537}
 --- !u!1 &1652300968 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a2e5df06d1b98794eb374b91b3cd673a, type: 3}
@@ -14494,6 +15339,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2fa61ec08cbbc8d4c8de7b19beea3cf2, type: 3}
   m_PrefabInstance: {fileID: 1552383352}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1680196536
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1680196537}
+  m_Layer: 0
+  m_Name: Kitchen2DropPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1680196537
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1680196536}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -35.38, y: 0, z: 6.24}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1453839169}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1690227810
 GameObject:
   m_ObjectHideFlags: 0
@@ -14826,6 +15702,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   throwForce: 600
   maxDistance: 3
+--- !u!1 &1748951299
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1748951300}
+  m_Layer: 0
+  m_Name: Stool1DropPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1748951300
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748951299}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -35.38, y: 0, z: 10.99}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1453839169}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1787431521
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15015,11 +15922,11 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 5.515, y: 0.5, z: 2.63}
+  m_Extents: {x: 6.455, y: 0.5, z: 3.45}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 1
-  m_Center: {x: -3.59, y: 2.18, z: 0.8}
+  m_Center: {x: -3.51, y: 2.18, z: 0.8}
   m_TimeToStationary: 0.5
 --- !u!1001 &1799743503
 PrefabInstance:
@@ -15029,9 +15936,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1453839169}
     m_Modifications:
+    - target: {fileID: 595172189224085800, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8489199620227322353, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
       propertyPath: m_Name
       value: Kitchen Chair 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489199620227322353, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9116520119084223307, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15039,7 +15954,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9116520119084223307, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.029999971
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9116520119084223307, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
       propertyPath: m_LocalPosition.z
@@ -15076,7 +15991,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8489199620227322353, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
+      insertIndex: 4
+      addedObject: {fileID: 1827334718}
   m_SourcePrefab: {fileID: 100100000, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
 --- !u!1 &1803362856
 GameObject:
@@ -15122,6 +16040,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9116520119084223307, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
   m_PrefabInstance: {fileID: 1799743503}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1827334718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387200143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d38d6c575f8fafa4d8d57a4889ad7535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOutOfPlace: 0
+  isHeldByPlayer: 0
+  correctPosition: {x: -34.18, y: 0, z: 3.1}
+  correctRotation: {x: 0, y: 0, z: 0, w: 0}
+  dropPoint: {fileID: 1289807718}
 --- !u!4 &1842092545 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9116520119084223307, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
@@ -15208,6 +16143,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 245c0e704a03a204791e73d89cd1c756, type: 3}
+--- !u!1 &1853775706
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1853775707}
+  m_Layer: 0
+  m_Name: Dining1DropPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1853775707
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853775706}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -23.79, y: 0, z: 32.34}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1453839169}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1857512474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15796,11 +16762,45 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6237240511646400650, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
   m_PrefabInstance: {fileID: 956087728}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1954009463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6417537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d38d6c575f8fafa4d8d57a4889ad7535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOutOfPlace: 0
+  isHeldByPlayer: 0
+  correctPosition: {x: -21.14, y: 0, z: 29.82}
+  correctRotation: {x: 0, y: 0, z: 0, w: 0}
+  dropPoint: {fileID: 1853775707}
 --- !u!4 &1958013840 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6237240511646400650, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
   m_PrefabInstance: {fileID: 1366817956}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1958013845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14627878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d38d6c575f8fafa4d8d57a4889ad7535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOutOfPlace: 0
+  isHeldByPlayer: 0
+  correctPosition: {x: -14.82, y: 0, z: 30.32}
+  correctRotation: {x: 0, y: 0, z: 0, w: 0}
+  dropPoint: {fileID: 1003840882}
 --- !u!1 &1960521445
 GameObject:
   m_ObjectHideFlags: 0
@@ -16031,6 +17031,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1453839169}
     m_Modifications:
+    - target: {fileID: 2326454995891725033, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6237240511646400650, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -24.76
@@ -16073,13 +17077,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6756791003646810672, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
       propertyPath: m_Name
-      value: Dining Chair (6)
+      value: Dining Chair 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6756791003646810672, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7210936281745831845, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6756791003646810672, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
+      insertIndex: 4
+      addedObject: {fileID: 2030871722}
   m_SourcePrefab: {fileID: 100100000, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
 --- !u!4 &1976045537 stripped
 Transform:
@@ -16177,6 +17188,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1453839169}
     m_Modifications:
+    - target: {fileID: 2326454995891725033, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6237240511646400650, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -17.07
@@ -16219,14 +17234,52 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6756791003646810672, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
       propertyPath: m_Name
-      value: Dining Chair (3)
+      value: Dining Chair 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6756791003646810672, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7210936281745831845, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6756791003646810672, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
+      insertIndex: 4
+      addedObject: {fileID: 1637900140}
   m_SourcePrefab: {fileID: 100100000, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
+--- !u!1 &2017314025
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2017314026}
+  m_Layer: 0
+  m_Name: Kitchen1DropPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2017314026
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2017314025}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -30.18, y: 0, z: 1.17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1453839169}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2018196000 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0e09b505ab5abf44ca13c30907afbde6, type: 3}
@@ -16364,6 +17417,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6237240511646400650, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
   m_PrefabInstance: {fileID: 927903855}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2024778321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 306469255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d38d6c575f8fafa4d8d57a4889ad7535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOutOfPlace: 0
+  isHeldByPlayer: 0
+  correctPosition: {x: 3.29, y: 0, z: -1.12}
+  correctRotation: {x: 0, y: 0, z: 0, w: 0}
+  dropPoint: {fileID: 929402680}
 --- !u!1 &2028549853
 GameObject:
   m_ObjectHideFlags: 0
@@ -16418,6 +17488,50 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2432090755550338912, guid: 4380531dc5416be40a3f2ef0ceea8c04, type: 3}
+--- !u!1 &2029173277 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8720443190632702293, guid: 0fe4c709dd398d84ea33a55c1b05f0cf, type: 3}
+  m_PrefabInstance: {fileID: 197767311}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2029173281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029173277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d38d6c575f8fafa4d8d57a4889ad7535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOutOfPlace: 0
+  isHeldByPlayer: 0
+  correctPosition: {x: -11.52, y: -0.02770054, z: 26.79}
+  correctRotation: {x: 0, y: 0, z: 0, w: 0}
+  dropPoint: {fileID: 1375546776}
+--- !u!1 &2030871717 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6756791003646810672, guid: 9ce4225f4d824674b90b8a9eb796241a, type: 3}
+  m_PrefabInstance: {fileID: 1968542814}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2030871722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2030871717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d38d6c575f8fafa4d8d57a4889ad7535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOutOfPlace: 0
+  isHeldByPlayer: 0
+  correctPosition: {x: -24.76, y: 0, z: 17.7}
+  correctRotation: {x: 0, y: 0, z: 0, w: 0}
+  dropPoint: {fileID: 248596094}
 --- !u!4 &2040959742 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 430540724388728995, guid: 8cf0c432f70623c44b3064fc409fa086, type: 3}
@@ -17072,6 +18186,28 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81c7f3b3b6441554c9357b51372cb305, type: 3}
+--- !u!1 &2117541820 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8489199620227322353, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
+  m_PrefabInstance: {fileID: 1368352585}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2117541825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117541820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d38d6c575f8fafa4d8d57a4889ad7535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOutOfPlace: 0
+  isHeldByPlayer: 0
+  correctPosition: {x: -31.28, y: 0, z: 4.71}
+  correctRotation: {x: 0, y: 0, z: 0, w: 0}
+  dropPoint: {fileID: 215675473}
 --- !u!1001 &2120341937
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17253,13 +18389,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1453839169}
     m_Modifications:
+    - target: {fileID: 595172189224085800, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8489199620227322353, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
       propertyPath: m_Name
       value: Kitchen Chair 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8489199620227322353, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 9116520119084223307, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -30.906416
+      value: -31.21
       objectReference: {fileID: 0}
     - target: {fileID: 9116520119084223307, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
       propertyPath: m_LocalPosition.y
@@ -17267,7 +18411,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9116520119084223307, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.8048058
+      value: 2.79
       objectReference: {fileID: 0}
     - target: {fileID: 9116520119084223307, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
       propertyPath: m_LocalRotation.w
@@ -17300,7 +18444,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8489199620227322353, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
+      insertIndex: 4
+      addedObject: {fileID: 1099397782}
   m_SourcePrefab: {fileID: 100100000, guid: b3b646d0b80cc654d89943627fdbaf90, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
