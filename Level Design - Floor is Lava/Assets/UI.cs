@@ -54,6 +54,11 @@ public class UI : MonoBehaviour
         Cursor.visible = false;
     }
 
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
+
     public void QuitGame()
     {
         Debug.Log("Quitting Game");
