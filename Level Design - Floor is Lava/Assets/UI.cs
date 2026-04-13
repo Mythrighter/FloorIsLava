@@ -52,11 +52,14 @@ public class UI : MonoBehaviour
         SceneManager.LoadScene("Game");
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        GameIsPaused = false;
+        Time.timeScale = 1f;
     }
 
     public void MainMenu()
     {
         SceneManager.LoadScene("Main Menu");
+        Time.timeScale = 1f;
     }
 
     public void QuitGame()
