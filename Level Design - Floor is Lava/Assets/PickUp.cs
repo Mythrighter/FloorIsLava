@@ -5,101 +5,80 @@ public class PickUp : MonoBehaviour
 {
     bool isHolding = false;
 
-    [SerializeField]
-    float throwForce = 300;
-    [SerializeField]
-    float maxDistance = 3f;
+    [SerializeField] float throwForce = 300;
+    [SerializeField] float maxDistance = 3f;
 
     float distance;
-
-
     TempParent tempParent;
     Rigidbody rb;
-
     Vector3 objectPos;
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         tempParent = TempParent.Instance;
-        
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if(isHolding)
-        {
+        if (isHolding)
             Hold();
-        }
     }
 
     void OnMouseDown()
     {
-        //pickup
-        if(tempParent != null)
-        {
-            distance = Vector3.Distance(this.transform.position, tempParent.transform.position);
-
-            if (distance <= maxDistance)
-            {
-                isHolding = true;
-                rb.useGravity = false;
-                rb.detectCollisions = true;
-                                
-                this.transform.SetParent(tempParent.transform);
-
-                Item item = GetComponent<Item>();
-                if (item != null) item.isHeldByPlayer = true;
-
-                if (tag == "CouchCushion")
-                {
-                    ScoreManager.sManager.IncreaseScoreCouchCushion(10);
-                }
-                
-                if (tag == "BigCushion")
-                {
-                    ScoreManager.sManager.IncreaseScoreBigCushion(20);
-                }
-
-                if (tag == "Bowl")
-                {
-                    ScoreManager.sManager.IncreaseScoreBowl(5);
-                }
-                
-            }
-
-        }
-        else
+        if (tempParent == null)
         {
             Debug.Log("Temp Parent item not found in scene");
+            return;
         }
+
+        distance = Vector3.Distance(transform.position, tempParent.transform.position);
+        if (distance > maxDistance) return;
+
+        isHolding = true;
+        rb.useGravity = false;
+        rb.detectCollisions = true;
+        transform.SetParent(tempParent.transform);
+
+        Item item = GetComponent<Item>();
+        if (item != null) item.isHeldByPlayer = true;
+
+        // Score + notify PlayerMisbehavior if it's a bad item
+        bool isBadItem = false;
+
+        if (CompareTag("CouchCushion"))
+        {
+            ScoreManager.sManager.IncreaseScoreCouchCushion(10);
+            isBadItem = true;
+        }
+        if (CompareTag("BigCushion"))
+        {
+            ScoreManager.sManager.IncreaseScoreBigCushion(20);
+            isBadItem = true;
+        }
+        if (CompareTag("Bowl"))
+        {
+            ScoreManager.sManager.IncreaseScoreBowl(5);
+            isBadItem = true;
+        }
+
+        if (isBadItem && PlayerMisbehavior.Instance != null)
+            PlayerMisbehavior.Instance.SetHoldingBadItem(true);
     }
 
-    private void OnMouseUp()
-    {
-        Drop();
-    }
-
-    private void OnMouseExit()
-    {
-        Drop();
-    }
+    private void OnMouseUp() => Drop();
+    private void OnMouseExit() => Drop();
 
     private void Hold()
     {
-        distance = Vector3.Distance(this.transform.position, tempParent.transform.position);
-
-        if(distance >= maxDistance)
-        {
-            Drop();
-        }
+        distance = Vector3.Distance(transform.position, tempParent.transform.position);
+        if (distance >= maxDistance) { Drop(); return; }
 
         rb.linearVelocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
 
-        if(Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1))
         {
             rb.AddForce(tempParent.transform.forward * throwForce);
             Drop();
@@ -108,16 +87,19 @@ public class PickUp : MonoBehaviour
 
     private void Drop()
     {
-        if(isHolding)
-        {
-            isHolding = false;
-            objectPos = this.transform.position;
-            this.transform.position = objectPos;
-            this.transform.SetParent(null);
-            rb.useGravity = true;
+        if (!isHolding) return;
 
-            Item item = GetComponent<Item>();
-            if (item != null) item.isHeldByPlayer = false;
-        }
+        isHolding = false;
+        objectPos = transform.position;
+        transform.position = objectPos;
+        transform.SetParent(null);
+        rb.useGravity = true;
+
+        Item item = GetComponent<Item>();
+        if (item != null) item.isHeldByPlayer = false;
+
+        // Always clear the bad item flag on drop, regardless of tag
+        if (PlayerMisbehavior.Instance != null)
+            PlayerMisbehavior.Instance.SetHoldingBadItem(false);
     }
 }
