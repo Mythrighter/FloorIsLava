@@ -10,6 +10,7 @@ TagManager:
   - Bowl
   - Table
   - Stove
+  - Key
   layers:
   - Default
   - TransparentFX

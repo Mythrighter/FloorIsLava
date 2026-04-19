@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class PickUp : MonoBehaviour
 {
-    bool isHolding = false;
+    public bool isHolding = false;
 
     [SerializeField] float throwForce = 300;
     [SerializeField] float maxDistance = 3f;
