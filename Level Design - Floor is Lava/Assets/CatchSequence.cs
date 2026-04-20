@@ -27,18 +27,21 @@ public class CatchSequence : MonoBehaviour
 
     [Header("Timing & Movement")]
     [Tooltip("How close the player needs to walk before the look + fade begins.")]
-    public float walkUntilDistance = 1.5f;
+    public float walkUntilDistance = 1f;
     [Tooltip("Speed the player walks toward the babysitter.")]
-    public float walkTowardSpeed = 3f;
+    public float walkTowardSpeed = 5f;
     [Tooltip("How long the player looks at the babysitter before fading.")]
     public float lookAtDuration = 2f;
     [Tooltip("How long the fade to black takes.")]
     public float fadeDuration = 1.5f;
     [Tooltip("Seconds before the safety net releases the player if end screen never triggers.")]
-    public float escapeTimeout = 8f;
+    public float escapeTimeout = 4f;
 
     private bool sequenceStarted = false;
     private bool sequenceCompleted = false;
+
+    public GameObject humanHead;
+    public GameObject demonHead;
 
     // Stored so ReleasePlayer can tell the babysitter to resume
     private Babysitter babysitterScript;
@@ -67,6 +70,8 @@ public class CatchSequence : MonoBehaviour
         playerController.enabled = false;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+        humanHead.SetActive(false);
+        demonHead.SetActive(true);
 
         // 2 ── Walk player toward babysitter until close enough
         while (Vector3.Distance(transform.position, babysitter.position) > walkUntilDistance)
@@ -152,6 +157,8 @@ public class CatchSequence : MonoBehaviour
         playerController.enabled = true;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        humanHead.SetActive(true);
+        demonHead.SetActive(false);
 
         if (fadeOverlay != null)
         {

@@ -8,6 +8,9 @@ public class UI : MonoBehaviour
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
 
+    public GameObject humanHead;
+    public GameObject demonHead;
+
     public void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -17,6 +20,8 @@ public class UI : MonoBehaviour
                 Resume();
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
+                humanHead.SetActive(true);
+                demonHead.SetActive(false);
             }
             else
             {
@@ -24,6 +29,10 @@ public class UI : MonoBehaviour
                 //Unlock cursor
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
+
+                //make demon head appear
+                humanHead.SetActive(false);
+                demonHead.SetActive(true);
             }
 
         }
@@ -36,6 +45,8 @@ public class UI : MonoBehaviour
         GameIsPaused = false;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        humanHead.SetActive(true);
+        demonHead.SetActive(false);
     }
 
     void Pause()
@@ -45,6 +56,8 @@ public class UI : MonoBehaviour
         GameIsPaused = true;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+        humanHead.SetActive(false);
+        demonHead.SetActive(true);
     }
 
     public void Restart()
@@ -54,6 +67,8 @@ public class UI : MonoBehaviour
         Cursor.visible = false;
         GameIsPaused = false;
         Time.timeScale = 1f;
+        humanHead.SetActive(true);
+        demonHead.SetActive(false);
     }
 
     public void MainMenu()

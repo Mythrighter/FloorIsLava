@@ -59,6 +59,7 @@ public class Babysitter : MonoBehaviour
 
     void Start()
     {
+        
         navAgent = GetComponent<NavMeshAgent>();
         baseSpeed = navAgent.speed;
 
@@ -209,6 +210,7 @@ public class Babysitter : MonoBehaviour
 
     void BeginChasingPlayer()
     {
+
         if (currentTarget != null)
         {
             currentTarget.SetTargeted(false);
