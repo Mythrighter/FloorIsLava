@@ -11,5 +11,9 @@ public class KeyPickup : MonoBehaviour
         {
             hasKey = true;
         }
+        else
+        {
+            hasKey = false;
+        }
     }
 }

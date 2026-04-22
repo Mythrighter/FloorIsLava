@@ -43,6 +43,7 @@ public class PlayerMisbehavior : MonoBehaviour
     {
         return go.CompareTag("CouchCushion")
             || go.CompareTag("Table")
-            || go.CompareTag("Stove");
+            || go.CompareTag("Stove")
+            || go.CompareTag("Key");
     }
 }
