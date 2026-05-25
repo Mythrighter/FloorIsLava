@@ -2,18 +2,27 @@ using UnityEngine;
 
 public class KeyPickup : MonoBehaviour
 {
-    public static bool hasKey = false;
+    public string keyId = "BathroomKey";
+    public GameObject inventoryKey; 
 
-    void Update()
+    public void Start()
     {
-        PickUp pickup = GetComponent<PickUp>();
-        if (pickup != null && pickup.isHolding)
+        inventoryKey.SetActive(false);
+    }
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        PlayerInventory inventory = other.GetComponent<PlayerInventory>();
+        if (inventory != null)
         {
-            hasKey = true;
+            inventory.AddKey(keyId);
+            Debug.Log("Picked up: " + keyId);
+            Destroy(gameObject);
+            inventoryKey.SetActive(true);
         }
         else
         {
-            hasKey = false;
+            inventoryKey.SetActive(false);
         }
     }
 }
