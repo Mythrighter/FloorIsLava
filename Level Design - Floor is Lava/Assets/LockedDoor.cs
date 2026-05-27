@@ -51,7 +51,7 @@ public class LockedDoor : MonoBehaviour
 
             //Unlocked
             isLocked = false;
-            if (consumeKeyOnUse) inventory.RemoveKey(requiredKeyId);
+            //if (consumeKeyOnUse) inventory.RemoveKey(requiredKeyId);
             Debug.Log("Door is unlocked with " + requiredKeyId);
         }
 

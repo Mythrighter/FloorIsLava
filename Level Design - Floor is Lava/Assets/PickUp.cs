@@ -47,21 +47,21 @@ public class PickUp : MonoBehaviour
         // Score + notify PlayerMisbehavior if it's a bad item
         bool isBadItem = false;
 
-        if (CompareTag("CouchCushion"))
-        {
-            ScoreManager.sManager.IncreaseScoreCouchCushion(10);
-            isBadItem = true;
-        }
-        if (CompareTag("BigCushion"))
-        {
-            ScoreManager.sManager.IncreaseScoreBigCushion(20);
-            isBadItem = true;
-        }
-        if (CompareTag("Bowl"))
-        {
-            ScoreManager.sManager.IncreaseScoreBowl(5);
-            isBadItem = true;
-        }
+        //if (CompareTag("CouchCushion"))
+        //{
+        //    ScoreManager.sManager.IncreaseScoreCouchCushion(10);
+        //    isBadItem = true;
+        //}
+        //if (CompareTag("BigCushion"))
+        //{
+        //    ScoreManager.sManager.IncreaseScoreBigCushion(20);
+        //    isBadItem = true;
+        //}
+        //if (CompareTag("Bowl"))
+        //{
+        //    ScoreManager.sManager.IncreaseScoreBowl(5);
+        //    isBadItem = true;
+        //}
 
         if (isBadItem && PlayerMisbehavior.Instance != null)
             PlayerMisbehavior.Instance.SetHoldingBadItem(true);

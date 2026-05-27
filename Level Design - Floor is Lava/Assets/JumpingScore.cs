@@ -2,23 +2,23 @@ using UnityEngine;
 
 public class JumpingScore : MonoBehaviour
 {
-    void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.CompareTag("CouchCushion"))
-        {
-            ScoreManager.sManager.IncreaseCushionWalk(5);
-        }
+    //void OnTriggerEnter(Collider other)
+    //{
+    //    if(other.gameObject.CompareTag("CouchCushion"))
+    //    {
+    //        ScoreManager.sManager.IncreaseCushionWalk(5);
+    //    }
 
-        if (other.gameObject.CompareTag("Table"))
-        {
-            ScoreManager.sManager.IncreaseTableWalk(5);
-        }
+    //    if (other.gameObject.CompareTag("Table"))
+    //    {
+    //        ScoreManager.sManager.IncreaseTableWalk(5);
+    //    }
 
-        if(other.gameObject.CompareTag("Stove"))
-        {
-            ScoreManager.sManager.IncreaseStoveWalk(25);
-        }
-    }
+    //    if(other.gameObject.CompareTag("Stove"))
+    //    {
+    //        ScoreManager.sManager.IncreaseStoveWalk(25);
+    //    }
+    //}
 
 
 }

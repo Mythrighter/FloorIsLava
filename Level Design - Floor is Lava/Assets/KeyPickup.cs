@@ -2,27 +2,23 @@ using UnityEngine;
 
 public class KeyPickup : MonoBehaviour
 {
-    public string keyId = "BathroomKey";
-    public GameObject inventoryKey; 
+    [SerializeField] private string keyId = "default";
+    [SerializeField] private Sprite inventoryIcon;
 
-    public void Start()
+    private void Reset()
     {
-        inventoryKey.SetActive(false);
+        GetComponent<Collider>().isTrigger = true;
     }
-    
+
     private void OnTriggerEnter(Collider other)
     {
-        PlayerInventory inventory = other.GetComponent<PlayerInventory>();
-        if (inventory != null)
+        if (!other.CompareTag("Player")) return;
+
+        if (PlayerInventory.Instance != null)
         {
-            inventory.AddKey(keyId);
-            Debug.Log("Picked up: " + keyId);
-            Destroy(gameObject);
-            inventoryKey.SetActive(true);
+            PlayerInventory.Instance.AddKey(keyId, inventoryIcon);
         }
-        else
-        {
-            inventoryKey.SetActive(false);
-        }
+
+        Destroy(gameObject);
     }
 }
