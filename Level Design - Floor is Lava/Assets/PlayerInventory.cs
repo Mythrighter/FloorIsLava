@@ -36,6 +36,7 @@ public class PlayerInventory : MonoBehaviour
         Debug.Log($"Picked up key: {keyId}. Total keys: {keys.Count}");
     }
 
+
     public bool HasKey(string keyId) => keys.Contains(keyId);
     public bool UseKey(string keyId) => keys.Remove(keyId);
 }

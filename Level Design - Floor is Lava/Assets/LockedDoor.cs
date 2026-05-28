@@ -3,7 +3,7 @@ using UnityEngine;
 public class LockedDoor : MonoBehaviour
 {
     [Header("Rotation Settings")]
-    public float openAngle = -85f;
+    public float openAngle = 170f;
     public float speed = 2f;
     public Vector3 hingeAxis = Vector3.up;
 
@@ -18,7 +18,7 @@ public class LockedDoor : MonoBehaviour
 
     private Quaternion closedRotation;
     private Quaternion openRotation;
-    private bool isOpen = false;
+    public bool isOpen = false;
 
     void Start()
     {
@@ -28,14 +28,20 @@ public class LockedDoor : MonoBehaviour
 
     public void HandleClick(Vector3 clickedPosition)
     {
-        if (player != null && Vector3.Distance(player.position, clickedPosition) > maxClickDistance)
-            return;
+        Debug.Log("HandleClick received");
 
-        Debug.Log("Door Clicked!");
+        if (player != null && Vector3.Distance(player.position, clickedPosition) > maxClickDistance)
+        {
+            Debug.Log($"Too far: distance is {Vector3.Distance(player.position, clickedPosition)}");
+            return;
+        }
+
+        Debug.Log($"Is locked: {isLocked}, Player null: {player == null}");
 
         if (isLocked)
         {
             PlayerInventory inventory = player != null ? player.GetComponent<PlayerInventory>() : null;
+            Debug.Log($"Inventory null: {inventory == null}");
 
             if (inventory == null)
             {
@@ -43,19 +49,21 @@ public class LockedDoor : MonoBehaviour
                 return;
             }
 
-            if (!inventory.HasKey(requiredKeyId))
+            bool hasKey = inventory.HasKey(requiredKeyId);
+            Debug.Log($"Has key '{requiredKeyId}': {hasKey}");
+
+            if (!hasKey)
             {
-                Debug.Log("The door is locked. You need: " + requiredKeyId);
+                Debug.Log("Key not found in inventory");
                 return;
             }
 
-            //Unlocked
             isLocked = false;
-            //if (consumeKeyOnUse) inventory.RemoveKey(requiredKeyId);
-            Debug.Log("Door is unlocked with " + requiredKeyId);
+            Debug.Log("Door unlocked with " + requiredKeyId);
         }
 
         isOpen = !isOpen;
+        Debug.Log($"Door is now {(isOpen ? "open" : "closed")}");
     }
 
     void Update()
